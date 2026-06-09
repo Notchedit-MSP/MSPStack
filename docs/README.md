@@ -21,7 +21,7 @@ The platform utilizes Terraform for infrastructure provisioning, Ansible for con
 ## Architecture Layers
 
 <p align="center">
-  <img src="images/MSPStack-High-Level-Overview.pdf" width="1000">
+  <img src="images/MSPStack-High-Level-Overview.png" width="1000">
 </p>
 
 1. Compute & Infrastructure Layer
