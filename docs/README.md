@@ -2,11 +2,27 @@
 
 ## Overview
 
-MSPStack is an enterprise-grade Managed Service Provider platform designed to provide infrastructure automation, monitoring, security operations, remote management, documentation, and client support services.
+This MSPStack provides a centralized platform for an enterprise-grade Managed IT Service Provider designed to implement infrastructure automation, monitoring, security operations, remote management, documentation, remote support, disaster recovery and client support services.
+The solution was designed to support small businesses and enterprise environments through automation, standardized deployment methodologies, and centralized operational visibility.
 
-### Core Technology Stack
+Primary objectives include:
 
-Architecture Layers
+* Infrastructure as Code
+* Automated Deployment
+* Endpoint Management
+* Security Monitoring
+* Documentation Management
+* Service Availability Monitoring
+* Disaster Recovery
+* Operational Efficiency
+
+The platform utilizes Terraform for infrastructure provisioning, Ansible for configuration management, and Docker for application deployment.
+
+## Architecture Layers
+
+<p align="center">
+  <img src="images/MSPStack-High-Level-Overview.pdf" width="1000">
+</p>
 
 1. Compute & Infrastructure Layer
 2. Configuration Management Layer
@@ -23,12 +39,12 @@ Architecture Layers
 * DigitalOcean
 * CLoudFlare
 
-### Configuration Layer
+#### Configuration Layer
 
 * Ansible
 * Docker
 
-### Monitoring Layer
+#### Monitoring Layer
 
 * MeshCentral
 * Wazuh
@@ -37,23 +53,51 @@ Architecture Layers
 * Zabbix
 * Uptime Kuma
 
-### Network & Security Layer
+#### Network & Security Layer
 
 * WireGuard VPN
 * Nginx Proxy Manager
 * CrowdSec
+* Wazuh
 
-### Ticketing & Documentation Layer
+#### Ticketing & Documentation Layer
 
 * GLPI
 * BookStack
 
-### Application Layer
+#### Application Layer
 
 * WordPress
 * MariaDB
 
-### Disaster Recovery Layer
+#### Backup & Disaster Recovery Layer
 
+Use combination of Veeam and cron jobs to regularly backup targets:
 
-Future Roadmap
+* Docker Volumes
+
+* MariaDB
+
+* PostgreSQL
+
+* Configuration Files
+
+* BookStack Data
+
+* MeshCentral Data
+
+* Retention
+
+** Daily
+
+** Weekly
+
+** Monthly
+
+##### Recovery Objectuves:
+
+** RTO: 4 Hours
+** RPO: 24 Hours
+
+#### Future Roadmap
+
