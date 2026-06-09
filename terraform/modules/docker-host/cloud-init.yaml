@@ -1,0 +1,18 @@
+#cloud-config
+
+package_update: true
+
+packages:
+  - docker.io
+  - docker-compose
+  - git
+  - curl
+  - unzip
+
+runcmd:
+
+  - systemctl enable docker
+
+  - systemctl start docker
+
+  - mkdir -p /opt/mspstack

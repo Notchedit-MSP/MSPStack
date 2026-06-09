@@ -1,0 +1,9 @@
+services:
+
+  wg-easy:
+
+    image: ghcr.io/wg-easy/wg-easy
+
+    ports:
+      - "51820:51820/udp"
+      - "51821:51821/tcp"
