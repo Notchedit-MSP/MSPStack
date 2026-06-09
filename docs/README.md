@@ -20,10 +20,13 @@ The platform utilizes Terraform for infrastructure provisioning, Ansible for con
 
 ## Architecture Layers
 
+### High Level Overview
+
 <p align="center">
   <img src="../images/MSPStack-High-Level-Overview.drawio.png" width="1000">
 </p>
 
+### Core Layers
 1. Compute & Infrastructure Layer
 2. Configuration Management Layer
 3. Monitoring Layer
@@ -33,18 +36,18 @@ The platform utilizes Terraform for infrastructure provisioning, Ansible for con
 7. Disaster Recovery Layer
 
 
-#### Compute & Infrastructure Layer
+### Compute & Infrastructure Layer
 
 * Terraform
 * DigitalOcean
 * CLoudFlare
 
-#### Configuration Layer
+### Configuration Layer
 
 * Ansible
 * Docker
 
-#### Monitoring Layer
+### Monitoring Layer
 
 * MeshCentral
 * Wazuh
@@ -53,24 +56,24 @@ The platform utilizes Terraform for infrastructure provisioning, Ansible for con
 * Zabbix
 * Uptime Kuma
 
-#### Network & Security Layer
+### Network & Security Layer
 
 * WireGuard VPN
 * Nginx Proxy Manager
 * CrowdSec
 * Wazuh
 
-#### Ticketing & Documentation Layer
+### Ticketing & Documentation Layer
 
 * GLPI
 * BookStack
 
-#### Application Layer
+### Application Layer
 
 * WordPress
 * MariaDB
 
-#### Backup & Disaster Recovery Layer
+### Backup & Disaster Recovery Layer
 
 Use combination of Veeam and cron jobs to regularly backup targets:
 
@@ -94,7 +97,7 @@ Use combination of Veeam and cron jobs to regularly backup targets:
 
 ** Monthly
 
-##### Recovery Objectuves:
+#### Recovery Objectuves:
 
 ** RTO: 4 Hours
 ** RPO: 24 Hours
