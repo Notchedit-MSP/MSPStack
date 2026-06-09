@@ -4,28 +4,56 @@
 
 MSPStack is an enterprise-grade Managed Service Provider platform designed to provide infrastructure automation, monitoring, security operations, remote management, documentation, and client support services.
 
-### Core Components
+### Core Technology Stack
+
+Architecture Layers
+
+1. Compute & Infrastructure Layer
+2. Configuration Management Layer
+3. Monitoring Layer
+4. Network & Security Layer
+5. Ticketing & Documentation Layer
+6. Application Layer
+7. Disaster Recovery Layer
+
+
+#### Compute & Infrastructure Layer
 
 * Terraform
+* DigitalOcean
+* CLoudFlare
+
+### Configuration Layer
+
 * Ansible
 * Docker
-* WireGuard VPN
-* Nginx Proxy Manager
+
+### Monitoring Layer
+
 * MeshCentral
 * Wazuh
-* CrowdSec
 * Grafana
 * Prometheus
 * Zabbix
+* Uptime Kuma
+
+### Network & Security Layer
+
+* WireGuard VPN
+* Nginx Proxy Manager
+* CrowdSec
+
+### Ticketing & Documentation Layer
+
 * GLPI
 * BookStack
+
+### Application Layer
+
 * WordPress
+* MariaDB
 
-### Architecture Layers
+### Disaster Recovery Layer
 
-1. Infrastructure Layer
-2. Configuration Management Layer
-3. Application Layer
-4. Security Layer
-5. Monitoring Layer
-6. Disaster Recovery Layer
+
+Future Roadmap
