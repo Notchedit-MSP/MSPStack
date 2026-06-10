@@ -1,4 +1,4 @@
-# MSPStack Documentation
+# MSPStack Architecture Documentation
 
 ## Overview
 
