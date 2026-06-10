@@ -1,6 +1,6 @@
-# MSPStack Documentation
+# MSPStack Architecture Documentation
 
-## Overview
+## Summary
 
 This MSPStack provides a centralized platform for an enterprise-grade Managed IT Service Provider designed to implement infrastructure automation, monitoring, security operations, remote management, documentation, remote support, disaster recovery and client support services.
 The solution was designed to support small businesses and enterprise environments through automation, standardized deployment methodologies, and centralized operational visibility.
