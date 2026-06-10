@@ -1,4 +1,4 @@
-﻿# MSPStack Architecture
+﻿# MSPStack Architecture Overview
 
 This document showcases the MSPStack architecture built around Docker, Nginx Proxy Manager, WordPress, MeshCentral, WireGuard VPN, Zabbix, Grafana, BookStack, CrowdSec, and supporting services.
 Enterprise-grade MSP Architecture:
